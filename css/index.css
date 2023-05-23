@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* #delateAll {
+  display: block;
+} */
+body {
+  background-color: #222;
+  font-family: system-ui;
+  color: white;
+  transition: 0.5s;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 10px;
+  top: 20px;
+  align-items: center;
+}
+.login i {
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.login .lognam {
+  display: flex;
+  align-items: center;
+}
+.login .lognam p {
+  color: white;
+  font-size: 18px;
+  margin: 0 12px;
+  padding: 0 5px;
+}
+.login .lognam img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 0 -10px;
+}
+
+/* end log in  */
+.container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.container .title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 80px 0 50px;
+}
+.container .title h1 {
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+.container .title p {
+  text-transform: uppercase;
+}
+/* end title  */
+.container .input {
+  width: 100%;
+}
+.container .input input {
+  background-color: #111;
+  color: white;
+  border-radius: 4px;
+  border-color: transparent;
+  outline: none;
+  height: 35px;
+  margin: 8px 0;
+  transition: 0.3s;
+}
+.container .input input:focus {
+  transform: scale(1.05);
+  border-bottom: 1px solid #777;
+  background-color: black;
+}
+.container .input input::placeholder {
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.container .input #title {
+  width: 100%;
+}
+.container .price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .price input {
+  width: 20%;
+  margin: 10px;
+}
+.container .price h2 {
+  background-color: rgb(230, 17, 17);
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+.container .price h2::before {
+  content: "totle: ";
+}
+
+/* end price  */
+.ouput {
+  width: 100%;
+}
+.ouput input {
+  width: 100%;
+}
+button {
+  width: 100%;
+  background-color: rgb(65, 8, 118);
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  height: 35px;
+  border-radius: 4px;
+  border-color: transparent;
+  margin: 5px 0;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.button {
+  width: 100%;
+  background-color: rgb(65, 8, 118);
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  height: 35px;
+  border-radius: 4px;
+  border-color: transparent;
+  margin: 5px 0;
+  transition: 0.3s;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: rgb(85, 13, 153);
+  letter-spacing: 1px;
+}
+.inout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.inout button {
+  flex-basis: 40%;
+}
+/* end output  */
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+table button {
+  /* margin: 0 10px; */
+  border-radius: 8px;
+  margin: 10px 0;
+}
+table #delate:hover {
+  letter-spacing: 0;
+  background-color: rgb(230, 17, 17);
+}
+table #update:hover {
+  letter-spacing: 0;
+  background-color: rgb(26, 206, 6);
+}
+table tr {
+  text-transform: uppercase;
+  /* color: white; */
+  margin: 0 5px;
+  height: 15px;
+}
+
+/* ?????????????????????  */
+.classlist-input {
+  background-color: rgba(234, 233, 233, 0.812) !important;
+  color: #111 !important;
+}
+.classLest-butten {
+  background-color: rgb(0, 115, 255) !important;
+}
+
+/* ////////////////////////////  */
+
+.active {
+  background-color: #777 !important;
+}
+#delateAll {
+  width: 100%;
+  background-color: rgb(65, 8, 118);
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: none;
+}
+#delateAll:hover {
+  background-color: red;
+  transform: scale(1.01);
+}
+
+/*
+ Deark MOood
+
+*/
+
+body.deark {
+  background-color: #77777757 !important;
+  color: #777 !important;
+}
+
+body.deark .login i {
+  color: #777 !important;
+}
+
+body.deark .login .lognam p {
+  color: black !important;
+}
+
+body.deark .container .input input {
+  background-color: #777 !important;
+  color: black !important;
+}
+body.deark .container .input input:focus {
+  border-bottom: 1px solid #777;
+  background-color: #474646 !important;
+}
+
+body.deark button {
+  background-color: #2196f3 !important;
+}
+
+body.deark button:hover {
+  background-color: #0a67b3 !important ;
+}
+/* end output  */
+
+.active {
+  background-color: #777 !important;
+}
+body.deark .container .input input::placeholder {
+  font-weight: 600;
+  padding: 5px;
+  text-transform: uppercase;
+  color: #fff6f6;
+}
+#delateAll {
+  width: 100%;
+  background-color: rgb(65, 8, 118);
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: none;
+}
+#delateAll:hover {
+  background-color: red;
+  transform: scale(1.01);
+}
+.show {
+  display: block !important;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body id="#77777757">
+    <div class="login" id="login">
+        <i class="fa-regular fa-moon" id="deark"></i>
+        <div class="lognam">
+        </div>
+    </div>
+    <!-- end log in  -->
+
+    <div class="container">
+        <div class="title">
+            <h1>cruds</h1>
+            <p>produut management system</p>
+        </div>
+        <!-- end title  -->
+        <div class="input">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input oninput="getTotle()" type="number" placeholder="price" id="price">
+                <input oninput="getTotle()" type="number" placeholder="texes" id="texes">
+                <input oninput="getTotle()" type="number" placeholder="ads" id="ads">
+                <input oninput="getTotle()" type="number" placeholder="discout" id="discout">
+                <h2 id="totle">total</h2>
+            </div>
+        </div>
+        <!-- end price input  -->
+        <div class="ouput input">
+            <input type="text" placeholder="count" id="count">
+            <input type="text" placeholder="cadegory" id="cadegory">
+            <button id="creat">creat</button>
+            <input type="searsh" placeholder="searsh" id="searsh" onkeyup="searshDta(this.value)">
+            <div class="inout">
+                <button id="searshByTitle" onclick="sar(this.id)">searsh by title</button>
+                <button id="searshByCad" onclick="sar(this.id)">searsh by cadegory</button>
+            </div>
+            <div id="delateAll" onclick="clearDtat()">delateAll</div>
+
+        </div>
+        <!-- end ouput  -->
+        <table>
+            <tr>
+                <!-- <th>id</th> -->
+                <th id="id">id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>dscunt</th>
+                <th>total</th>
+                <th>count</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+        <!-- end table  -->
+    </div>
+    <script src="mine.js"></script>
+</body>
+
+</html>
